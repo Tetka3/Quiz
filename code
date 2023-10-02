@@ -1,0 +1,14 @@
+questions = ['What is the capital city of Japan? ',
+'Which language is common in Japan? ', 'what is your name? ']
+answers = ['Tokyo','Japanese', 'Jane']
+
+questions_right = 0
+for i in range(len(questions)):
+    guess = input(questions[i])
+    if guess.lower()==answers[i].lower():
+        print('Correct')
+        questions_right=questions_right+1
+    else:
+        print('Wrong. The answer is', answers[i])
+print('You have', questions_right, 'out of', i+1, 'right.')
+print('Thanks for participating in the quiz!')
